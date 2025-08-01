@@ -8,6 +8,34 @@ export default defineConfig({
 	srcDir: "website",
 	appearance: false, // disable appearance switch
 	lastUpdated: true,
+	head: [
+		[
+			"link",
+			{
+				rel: "icon",
+				type: "image/png",
+				href: "/favicon-32x32.png",
+				sizes: "32x32",
+			},
+		],
+		[
+			"link",
+			{
+				rel: "icon",
+				type: "image/png",
+				href: "/favicon-192x192.png",
+				sizes: "192x192",
+			},
+		],
+		[
+			"link",
+			{
+				rel: "apple-touch-icon",
+				href: "/apple-touch-icon.png",
+				sizes: "180x180",
+			},
+		],
+	],
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: "/logo.png",
