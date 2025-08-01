@@ -17,8 +17,21 @@ const { Layout } = DefaultTheme
   background: var(--vp-nav-bg-color);
 }
 
-.VPNav .VPNavBarTitle .title{
+.VPNav .VPNavBarTitle .title {
   border: none;
 }
 
+.VPNavBarMenuLink {
+  /* color: var(--vp-c-brand-1) !important; */
+  color: white !important;
+}
+
+.VPNavBarMenuLink.active {
+  /* color: white !important; */
+  color: var(--vp-c-brand-1) !important;
+}
+
+.vpi-languages.option-icon, .vpi-chevron-down.text-icon {
+  color: var(--vp-c-brand-1) !important;
+}
 </style>
