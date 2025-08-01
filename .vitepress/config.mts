@@ -6,11 +6,12 @@ export default defineConfig({
 	description:
 		"Documentation, blog and API reference site for products of Atmos Group Finland",
 	srcDir: "website",
+	appearance: false, // disable appearance switch
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: "/logo.png",
-    siteTitle: false,
-    nav: [
+		siteTitle: false,
+		nav: [
 			{ text: "Home", link: "/index" },
 			{ text: "Examples", link: "/markdown-examples" },
 		],

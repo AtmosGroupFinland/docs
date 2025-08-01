@@ -32,6 +32,7 @@ const { Layout } = DefaultTheme
 }
 
 .vpi-languages.option-icon, .vpi-chevron-down.text-icon {
-  color: var(--vp-c-brand-1) !important;
+  /* color: var(--vp-c-brand-1) !important; */
+  color: white !important;
 }
 </style>
