@@ -7,6 +7,7 @@ export default defineConfig({
 		"Documentation, blog and API reference site for products of Atmos Group Finland",
 	srcDir: "website",
 	appearance: false, // disable appearance switch
+	lastUpdated: true,
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: "/logo.png",
@@ -22,14 +23,36 @@ export default defineConfig({
 
 		sidebar: [
 			{
-				text: "Examples",
+				text: "Products",
 				items: [
-					{ text: "Markdown Examples", link: "/markdown-examples" },
-					{ text: "Runtime API Examples", link: "/api-examples" },
+					{
+						text: "AtmosTrack",
+						collapsed: true,
+						items: [
+							{ text: "Markdown Examples", link: "/markdown-examples" },
+							{ text: "Runtime API Examples", link: "/api-examples" },
+						],
+					},
+					{
+						text: "AtmosDot",
+						collapsed: true,
+						items: [{ text: "Overview", link: "/atmosdot/overview" }],
+					},
+					{
+						text: "AtmosPortal",
+						collapsed: true,
+						items: [{ text: "Overview", link: "/atmosportal/overview" }],
+					},
 				],
 			},
 		],
 		i18nRouting: true,
+
+		editLink: {
+			pattern:
+				"https://github.com/AtmosGroupFinland/docs/edit/main/website/:path",
+			text: "Edit this page on GitHub",
+		},
 	},
 	locales: {
 		root: { label: "English", lang: "en" },

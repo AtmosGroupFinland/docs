@@ -19,6 +19,8 @@ const { Layout } = DefaultTheme
 
 .VPNav .VPNavBarTitle .title {
   border: none;
+  display: flex;
+  align-items: flex-end;
 }
 
 .VPNavBarMenuLink {
@@ -31,7 +33,8 @@ const { Layout } = DefaultTheme
   color: var(--vp-c-brand-1) !important;
 }
 
-.vpi-languages.option-icon, .vpi-chevron-down.text-icon {
+.vpi-languages.option-icon,
+.vpi-chevron-down.text-icon {
   /* color: var(--vp-c-brand-1) !important; */
   color: white !important;
 }
