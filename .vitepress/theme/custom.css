@@ -5,3 +5,41 @@
     --vp-nav-logo-height: 50px;
     --vp-nav-bg-color: #00384F;
 }
+
+/* Additional CSS for better hover and active states */
+.VPNavBarMenuLink {
+    position: relative;
+    transition: all 0.3s ease !important;
+    line-height: 2 !important;
+}
+
+.VPNavBarMenuLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--vp-c-brand-1);
+    transition: width 0.3s ease;
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink.active::after {
+    width: 80%;
+}
+
+/* Ensure search button has proper hover effect */
+.DocSearch-Button:hover {
+    box-shadow: inset 0 0 0 1px var(--vp-c-brand-1);
+}
+
+/* Language selector hover improvements */
+.VPNavBarTranslations .button {
+    transition: all 0.3s ease;
+}
+
+.VPNavBarTranslations .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

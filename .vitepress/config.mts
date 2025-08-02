@@ -41,9 +41,9 @@ export default defineConfig({
 		logo: "/logo.png",
 		siteTitle: false,
 		nav: [
-			{ text: "Home", link: "/index" },
+			{ text: "Home", link: "/" },
 			{ text: "Documentation", link: "/markdown-examples" },
-			{ text: "Blog", link: "/blog/index" },
+			{ text: "Blog", link: "/blog/", activeMatch: "/blog/" },
 		],
 
 		search: {
