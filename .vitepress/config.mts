@@ -99,7 +99,36 @@ export default defineConfig({
 	},
 	locales: {
 		root: { label: "English", lang: "en" },
-		fi: { label: "Suomi", lang: "fi" },
+		fi: {
+			label: "Suomi",
+			lang: "fi",
+			themeConfig: {
+				nav: [
+					{ text: "Dokumentaatio", link: "/fi" },
+					{ text: "Blogi", link: "/fi/blog/" },
+				],
+				sidebar: {
+					"/fi": [
+						{
+							text: "Katselmointi",
+							link: "/fi",
+						},
+						{
+							text: "Tuotteet",
+							items: [
+								{
+									text: "AtmosTrack",
+									link: "/fi/atmostrack",
+								},
+							],
+						},
+					],
+					"/fi/blog/": [
+						{ text: "Blogi", items: [{ text: "Katselmointi", link: "/fi/blog/" }] },
+					],
+				},
+			},
+		},
 		ar: {
 			label: "العربية",
 			lang: "ar",
