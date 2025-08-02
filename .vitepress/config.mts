@@ -39,11 +39,6 @@ export default defineConfig({
 		],
 	],
 
-	rewrites: {
-		"fi/blog/:path*": "blog/:path*",
-		"ar/blog/:path*": "blog/:path*",
-		"ee/blog/:path*": "blog/:path*",
-	},
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: "/logo.png",

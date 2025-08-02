@@ -1,7 +1,6 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 
-// biome-ignore lint/correctness/noUnusedVariables: ignore
 const { Layout } = DefaultTheme
 </script>
 
