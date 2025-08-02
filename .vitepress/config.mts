@@ -67,7 +67,10 @@ export default defineConfig({
 									selectText: "Siirry",
 									selectKeyAriaLabel: "Siirry",
 									navigateText: "Vaihda",
-									navigateUpKeyAriaLabel: "Vaihda",
+									navigateUpKeyAriaLabel: "Ylös",
+									navigateDownKeyAriaLabel: "Alas",
+									closeText: "Sulje",
+									closeKeyAriaLabel: "esc",
 								},
 							},
 						},
@@ -75,7 +78,6 @@ export default defineConfig({
 				},
 			},
 		},
-
 		sidebar: {
 			"/": [
 				{
@@ -154,6 +156,18 @@ export default defineConfig({
 							items: [{ text: "Katselmointi", link: "/fi/blog/" }],
 						},
 					],
+				},
+				editLink: {
+					pattern:
+						"https://github.com/AtmosGroupFinland/docs/edit/main/website/:path",
+					text: "Muuta tämä sivu GitHubissa",
+				},
+				lastUpdated: {
+					text: "Viimeksi päivitetty",
+				},
+				docFooter: {
+					prev: "Edellinen sivu",
+					next: "Seuraava sivu",
 				},
 			},
 		},

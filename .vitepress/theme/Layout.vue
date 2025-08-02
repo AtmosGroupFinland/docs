@@ -6,9 +6,9 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
-    <template #aside-outline-before>
+    <!-- <template #aside-outline-before>
       Content
-    </template>
+    </template> -->
   </Layout>
 </template>
 
