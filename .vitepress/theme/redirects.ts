@@ -1,5 +1,5 @@
 // Blog index redirects - redirect language-specific blog indexes to English if no translation exists
-export const blogIndexRedirects: Record<string, string> = {
+export const redirects: Record<string, string> = {
 	// "/fi/blog/": "/blog/", // Now has its own page
 	// "/ar/blog/": "/blog/", // Now has its own page with client-side redirect
 	// "/ee/blog/": "/blog/", // Now has its own page with client-side redirect
@@ -10,7 +10,7 @@ export const blogIndexRedirects: Record<string, string> = {
 export const availableTranslations: Record<string, string[]> = {
 	"sample-post-1": ["en", "fi"], // Available in English and Finnish
 	"sample-post-2": ["en"], // Only available in English
-	"sample-post-3": ["en"], // Only available in English
+	"sample-post-3": ["en", "fi"], // Available in English and Finnish
 };
 
 // Helper function to check if a blog post translation exists
@@ -25,8 +25,8 @@ export function findRedirectForPathSync(path: string): string | undefined {
 	const cleanPath = path.replace(/\.html$/i, "").replace(/\/$/, "");
 
 	// Always redirect blog index pages to English if they don't have translations
-	if (blogIndexRedirects[cleanPath] || blogIndexRedirects[cleanPath + "/"]) {
-		return blogIndexRedirects[cleanPath] || blogIndexRedirects[cleanPath + "/"];
+	if (redirects[cleanPath] || redirects[cleanPath + "/"]) {
+		return redirects[cleanPath] || redirects[cleanPath + "/"];
 	}
 
 	// Handle blog post redirects
@@ -39,7 +39,7 @@ export function findRedirectForPathSync(path: string): string | undefined {
 	for (const { pattern, lang } of blogPatterns) {
 		if (path.startsWith(pattern)) {
 			const postSlug = path.slice(pattern.length).replace(/\.html$/i, "");
-			
+
 			// If this is a blog index (empty slug), allow it to proceed
 			// since we now have actual blog index pages for all languages
 			if (postSlug === "" || postSlug === "/") {
