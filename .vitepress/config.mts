@@ -9,6 +9,7 @@ export default defineConfig({
 	appearance: false, // disable dark mode switch
 	lastUpdated: true,
 	cleanUrls: true,
+
 	head: [
 		[
 			"link",
@@ -37,6 +38,12 @@ export default defineConfig({
 			},
 		],
 	],
+
+	rewrites: {
+		"fi/blog/:path*": "blog/:path*",
+		"ar/blog/:path*": "blog/:path*",
+		"ee/blog/:path*": "blog/:path*",
+	},
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: "/logo.png",
@@ -107,5 +114,8 @@ export default defineConfig({
 			},
 		},
 		ee: { label: "Eesti", lang: "et" },
+	},
+	sitemap: {
+		hostname: "https://docs.atmosgroup.fi",
 	},
 });
