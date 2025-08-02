@@ -1,8 +1,8 @@
 <template>
   <div class="blog-index">
     <div class="blog-header">
-      <h1>Blog</h1>
-      <p>Latest updates and insights from the AGF team</p>
+      <h1>{{ getLocalizedTitle() }}</h1>
+      <p>{{ getLocalizedSubtitle() }}</p>
     </div>
 
     <div class="blog-posts">
@@ -22,7 +22,7 @@
 
         <div class="post-footer">
           <span class="post-author" v-if="post.frontmatter.author">by {{ post.frontmatter.author }}</span>
-          <a :href="post.url" class="read-more">Read more →</a>
+          <a :href="post.url" class="read-more">{{ getLocalizedReadMore() }} →</a>
         </div>
       </article>
     </div>
@@ -31,26 +31,25 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useData } from 'vitepress'
 import { data as allPosts } from '../../data/blogPosts.data.js'
 
-const { site } = useData()
-
-// Get current language from the site locale
-const currentLang = computed(() => {
-  const path = typeof window !== 'undefined' ? window.location.pathname : '/'
-  if (path.startsWith('/fi/')) return 'fi'
-  if (path.startsWith('/ar/')) return 'ar'
-  if (path.startsWith('/ee/')) return 'ee'
-  return 'en'
+const props = defineProps({
+  language: {
+    type: String,
+    default: 'en'
+  }
 })
 
-// Filter posts to show only English posts (blog index is always English)
+// Filter posts for the current language, fallback to English if no posts available
 const posts = computed(() => {
-  if (!Array.isArray(allPosts)) {
-    return []
+  const langPosts = allPosts.filter(post => post.language === props.language)
+  
+  // If no posts in the requested language, show English posts
+  if (langPosts.length === 0) {
+    return allPosts.filter(post => post.language === 'en')
   }
-  return allPosts.filter(post => post.language === 'en')
+  
+  return langPosts
 })
 
 function formatDate(date) {
@@ -61,9 +60,40 @@ function formatDate(date) {
     day: 'numeric'
   })
 }
+
+function getLocalizedTitle() {
+  const titles = {
+    'en': 'Blog',
+    'fi': 'Blogi',
+    'ar': 'المدونة',
+    'ee': 'Blogi'
+  }
+  return titles[props.language] || titles['en']
+}
+
+function getLocalizedSubtitle() {
+  const subtitles = {
+    'en': 'Latest updates and insights from the AGF team',
+    'fi': 'Viimeisimmät päivitykset ja näkemykset AGF-tiimiltä',
+    'ar': 'آخر التحديثات والرؤى من فريق AGF',
+    'ee': 'Viimased uudised ja teadmised AGF meeskonnalt'
+  }
+  return subtitles[props.language] || subtitles['en']
+}
+
+function getLocalizedReadMore() {
+  const readMore = {
+    'en': 'Read more',
+    'fi': 'Lue lisää',
+    'ar': 'اقرأ المزيد',
+    'ee': 'Loe edasi'
+  }
+  return readMore[props.language] || readMore['en']
+}
 </script>
 
 <style scoped>
+/* Same styles as BlogIndex.vue */
 .blog-index {
   max-width: 960px;
   margin: 0 auto;
@@ -177,21 +207,21 @@ function formatDate(date) {
   .blog-index {
     padding: 1rem;
   }
-
+  
   .blog-header h1 {
     font-size: 2rem;
   }
-
+  
   .blog-post-card {
     padding: 1.5rem;
   }
-
+  
   .post-meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-
+  
   .post-footer {
     flex-direction: column;
     align-items: flex-start;

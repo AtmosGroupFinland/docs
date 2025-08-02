@@ -1,7 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import Layout from "./Layout.vue";
 import BlogIndex from "./components/BlogIndex.vue";
-import { findRedirectForPath } from "./redirects";
+import { findRedirectForPathSync } from "./redirects";
 import "./custom.css";
 
 export default {
@@ -11,7 +11,8 @@ export default {
 		app.component("BlogIndex", BlogIndex);
 
 		router.onBeforeRouteChange = (to: string) => {
-			const redirectPath = findRedirectForPath(to);
+			// Use synchronous version for router hook
+			const redirectPath = findRedirectForPathSync(to);
 
 			if (redirectPath) {
 				setTimeout(() => {

@@ -1,39 +1,55 @@
-export const redirects: Record<string, string> = {
-	// Finnish blog redirects
-	"/fi/blog/": "/blog/",
-	"/fi/blog/sample-post-1": "/blog/sample-post-1",
-	"/fi/blog/sample-post-2": "/blog/sample-post-2",
-	"/fi/blog/sample-post-3": "/blog/sample-post-3",
-
-	// Arabic blog redirects
-	"/ar/blog/": "/blog/",
-	"/ar/blog/sample-post-1": "/blog/sample-post-1",
-	"/ar/blog/sample-post-2": "/blog/sample-post-2",
-	"/ar/blog/sample-post-3": "/blog/sample-post-3",
-
-	// Estonian blog redirects
-	"/ee/blog/": "/blog/",
-	"/ee/blog/sample-post-1": "/blog/sample-post-1",
-	"/ee/blog/sample-post-2": "/blog/sample-post-2",
-	"/ee/blog/sample-post-3": "/blog/sample-post-3",
+// Blog index redirects - redirect language-specific blog indexes to English if no translation exists
+export const blogIndexRedirects: Record<string, string> = {
+	// "/fi/blog/": "/blog/", // Now has its own page
+	// "/ar/blog/": "/blog/", // Now has its own page with client-side redirect
+	// "/ee/blog/": "/blog/", // Now has its own page with client-side redirect
 };
 
-// Helper function to find redirect for paths that start with a pattern
-export function findRedirectForPath(path: string): string | undefined {
+// List of blog posts that have translations available
+// Update this list when you add new translations
+export const availableTranslations: Record<string, string[]> = {
+	"sample-post-1": ["en", "fi"], // Available in English and Finnish
+	"sample-post-2": ["en"], // Only available in English
+	"sample-post-3": ["en"], // Only available in English
+};
+
+// Helper function to check if a blog post translation exists
+function hasTranslation(postSlug: string, language: string): boolean {
+	const translations = availableTranslations[postSlug];
+	return translations ? translations.includes(language) : false;
+}
+
+// Synchronous version for router hook
+export function findRedirectForPathSync(path: string): string | undefined {
 	// Remove trailing slash and .html for comparison
 	const cleanPath = path.replace(/\.html$/i, "").replace(/\/$/, "");
 
-	// Check for exact match first
-	if (redirects[cleanPath] || redirects[cleanPath + "/"]) {
-		return redirects[cleanPath] || redirects[cleanPath + "/"];
+	// Always redirect blog index pages to English if they don't have translations
+	if (blogIndexRedirects[cleanPath] || blogIndexRedirects[cleanPath + "/"]) {
+		return blogIndexRedirects[cleanPath] || blogIndexRedirects[cleanPath + "/"];
 	}
 
-	// Check for pattern matches (for blog posts not explicitly listed)
-	const blogPatterns = ["/fi/blog/", "/ar/blog/", "/ee/blog/"];
+	// Handle blog post redirects
+	const blogPatterns = [
+		{ pattern: "/fi/blog/", lang: "fi" },
+		{ pattern: "/ar/blog/", lang: "ar" },
+		{ pattern: "/ee/blog/", lang: "ee" },
+	];
 
-	for (const pattern of blogPatterns) {
+	for (const { pattern, lang } of blogPatterns) {
 		if (path.startsWith(pattern)) {
-			return "/blog/" + path.slice(pattern.length);
+			const postSlug = path.slice(pattern.length).replace(/\.html$/i, "");
+			
+			// If this is a blog index (empty slug), allow it to proceed
+			// since we now have actual blog index pages for all languages
+			if (postSlug === "" || postSlug === "/") {
+				return undefined;
+			}
+
+			// Only redirect if the translation doesn't exist
+			if (!hasTranslation(postSlug, lang)) {
+				return "/blog/" + postSlug;
+			}
 		}
 	}
 
