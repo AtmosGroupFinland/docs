@@ -6,7 +6,7 @@ export default defineConfig({
 	description:
 		"Documentation, blog and API reference site for products of Atmos Group Finland",
 	srcDir: "website",
-	appearance: false, // disable appearance switch
+	appearance: false, // disable dark mode switch
 	lastUpdated: true,
 	head: [
 		[
@@ -42,38 +42,47 @@ export default defineConfig({
 		siteTitle: false,
 		nav: [
 			{ text: "Home", link: "/index" },
-			{ text: "Examples", link: "/markdown-examples" },
+			{ text: "Documentation", link: "/markdown-examples" },
+			{ text: "Blog", link: "/blog/index" },
 		],
 
 		search: {
 			provider: "local",
 		},
 
-		sidebar: [
-			{
-				text: "Products",
-				items: [
-					{
-						text: "AtmosTrack",
-						collapsed: true,
-						items: [
-							{ text: "Markdown Examples", link: "/markdown-examples" },
-							{ text: "Runtime API Examples", link: "/api-examples" },
-						],
-					},
-					{
-						text: "AtmosDot",
-						collapsed: true,
-						items: [{ text: "Overview", link: "/atmosdot/overview" }],
-					},
-					{
-						text: "AtmosPortal",
-						collapsed: true,
-						items: [{ text: "Overview", link: "/atmosportal/overview" }],
-					},
-				],
-			},
-		],
+		sidebar: {
+			"/": [
+				{
+					text: "Products",
+					items: [
+						{
+							text: "AtmosTrack",
+							collapsed: true,
+							items: [
+								{ text: "Markdown Examples", link: "/markdown-examples" },
+								{ text: "Runtime API Examples", link: "/api-examples" },
+							],
+						},
+						{
+							text: "AtmosDot",
+							collapsed: true,
+							items: [{ text: "Overview", link: "/atmosdot/overview" }],
+						},
+						{
+							text: "AtmosPortal",
+							collapsed: true,
+							items: [{ text: "Overview", link: "/atmosportal/overview" }],
+						},
+					],
+				},
+			],
+			"/blog/": [
+				{
+					text: "Blog",
+					items: [{ text: "Overview", link: "/blog/" }],
+				},
+			],
+		},
 		i18nRouting: true,
 
 		editLink: {
