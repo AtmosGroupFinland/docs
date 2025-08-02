@@ -50,6 +50,30 @@ export default defineConfig({
 
 		search: {
 			provider: "local",
+			options: {
+				locales: {
+					fi: {
+						translations: {
+							button: {
+								buttonText: "Hae",
+								buttonAriaLabel: "Hae",
+							},
+							modal: {
+								displayDetails: "Näytä lisätiedot",
+								resetButtonTitle: "Tyhjennä haku",
+								noResultsText: "Ei tuloksia",
+								backButtonTitle: "Takaisin",
+								footer: {
+									selectText: "Siirry",
+									selectKeyAriaLabel: "Siirry",
+									navigateText: "Vaihda",
+									navigateUpKeyAriaLabel: "Vaihda",
+								},
+							},
+						},
+					},
+				},
+			},
 		},
 
 		sidebar: {
@@ -118,13 +142,17 @@ export default defineConfig({
 							items: [
 								{
 									text: "AtmosTrack",
-									link: "/fi/atmostrack",
+									collapsed: true,
+									items: [],
 								},
 							],
 						},
 					],
 					"/fi/blog/": [
-						{ text: "Blogi", items: [{ text: "Katselmointi", link: "/fi/blog/" }] },
+						{
+							text: "Blogi",
+							items: [{ text: "Katselmointi", link: "/fi/blog/" }],
+						},
 					],
 				},
 			},
