@@ -8,6 +8,7 @@ export default defineConfig({
 	srcDir: "website",
 	appearance: false, // disable dark mode switch
 	lastUpdated: true,
+	cleanUrls: true,
 	head: [
 		[
 			"link",
@@ -41,8 +42,7 @@ export default defineConfig({
 		logo: "/logo.png",
 		siteTitle: false,
 		nav: [
-			{ text: "Home", link: "/" },
-			{ text: "Documentation", link: "/markdown-examples" },
+			{ text: "Documentation", link: "/" },
 			{ text: "Blog", link: "/blog/", activeMatch: "/blog/" },
 		],
 

@@ -4,7 +4,7 @@
       <h1>Blog</h1>
       <p>Latest updates and insights from the AGF team</p>
     </div>
-    
+
     <div class="blog-posts">
       <article v-for="post in posts" :key="post.url" class="blog-post-card">
         <div class="post-meta">
@@ -13,13 +13,13 @@
             <span v-for="tag in post.frontmatter.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
         </div>
-        
+
         <h2 class="post-title">
           <a :href="post.url">{{ post.frontmatter.title }}</a>
         </h2>
-        
+
         <p class="post-excerpt">{{ post.frontmatter.excerpt }}</p>
-        
+
         <div class="post-footer">
           <span class="post-author" v-if="post.frontmatter.author">by {{ post.frontmatter.author }}</span>
           <a :href="post.url" class="read-more">Read more →</a>
@@ -30,41 +30,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+/** biome-ignore-all lint/correctness/noUnusedImports: ignore */
+import { data as posts } from '../../data/blogPosts.data.js'
 
-const posts = ref([
-  {
-    url: '/blog/sample-post-1',
-    frontmatter: {
-      title: 'Getting Started with AtmosTrack',
-      date: '2024-01-15',
-      excerpt: 'Learn how to set up and configure AtmosTrack for your environmental monitoring needs. This comprehensive guide covers installation, basic configuration, and your first monitoring setup.',
-      author: 'AGF Team',
-      tags: ['atmostrack', 'getting-started', 'tutorial']
-    }
-  },
-  {
-    url: '/blog/sample-post-2',
-    frontmatter: {
-      title: 'AtmosDot Updates - Q1 2024',
-      date: '2024-02-10',
-      excerpt: 'Exciting new features and improvements in AtmosDot this quarter, including enhanced data visualization, improved real-time monitoring capabilities, and new API endpoints.',
-      author: 'Development Team',
-      tags: ['atmosdot', 'updates', 'features']
-    }
-  },
-  {
-    url: '/blog/sample-post-3',
-    frontmatter: {
-      title: 'AtmosPortal Integration Guide',
-      date: '2024-03-05',
-      excerpt: 'Complete guide to integrating AtmosPortal with your existing systems. Learn about API authentication, data synchronization, and best practices for enterprise deployments.',
-      author: 'Technical Team',
-      tags: ['atmosportal', 'integration', 'enterprise', 'api']
-    }
-  }
-])
-
+// biome-ignore lint/correctness/noUnusedVariables: ignore
 function formatDate(date) {
   if (!date) return ''
   return new Date(date).toLocaleDateString('en-US', {
@@ -189,21 +158,21 @@ function formatDate(date) {
   .blog-index {
     padding: 1rem;
   }
-  
+
   .blog-header h1 {
     font-size: 2rem;
   }
-  
+
   .blog-post-card {
     padding: 1.5rem;
   }
-  
+
   .post-meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-  
+
   .post-footer {
     flex-direction: column;
     align-items: flex-start;

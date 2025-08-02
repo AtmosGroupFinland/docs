@@ -1,6 +1,8 @@
-module.exports = {
+import postcssRtlcss from "postcss-rtlcss";
+
+export default {
 	plugins: [
-		require("postcss-rtlcss")({
+		postcssRtlcss({
 			ltrPrefix: ':where([dir="ltr"])',
 			rtlPrefix: ':where([dir="rtl"])',
 			bothPrefix: ":where([dir])",
