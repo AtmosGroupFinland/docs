@@ -208,11 +208,11 @@ function formatDate(date) {
   }
 }
 .post-image {
-  width: 100%;
+  width: 100px;
   height: 100px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
-  object-fit: cover;
 }
 
 </style>
