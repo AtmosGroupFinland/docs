@@ -47,9 +47,10 @@ As of 03.08.2025 we only have Beta version, stable release is coming very soon!
 ## Installation Instructions
 
 1. **Download** the latest installer using the link above
-2. **Run** the downloaded `.exe` file as administrator
-3. **Follow** the installation wizard steps
-4. **Launch** AtmosTrack from your desktop or start menu
+2. **Run** the downloaded `.exe` file
+3. **Accept Warning** There will be warning about installing potentially dangerous software this is due to software being in Beta version and missing a code signing certificate (we're woking on it).
+5. **Follow** the installation wizard steps
+6. **Launch** AtmosTrack from your desktop or start menu
 
 ## System Requirements
 
