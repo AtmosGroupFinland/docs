@@ -14,6 +14,14 @@
           </div>
         </div>
 
+        <!-- Blog Post Image -->
+        <img
+          v-if="post.frontmatter.image"
+          :src="post.frontmatter.image"
+          alt="Blog post image"
+          class="post-image"
+        />
+
         <h2 class="post-title">
           <a :href="post.url">{{ post.frontmatter.title }}</a>
         </h2>
@@ -28,6 +36,7 @@
     </div>
   </div>
 </template>
+
 
 <script setup>
 import { computed } from 'vue'
@@ -198,4 +207,12 @@ function formatDate(date) {
     gap: 0.5rem;
   }
 }
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
 </style>
