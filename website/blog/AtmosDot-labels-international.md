@@ -18,4 +18,4 @@ How do you keep identical-looking instruments separate? How can you ensure that 
 
 Each instrument is marked with a specific color by department, and a unique 2D Matrix code is laser-etched onto each label. The colored identifier speeds up departmental identification even before the washing process begins, allowing instruments from the same client to be processed together in the same washer. Even if washing is done in different machines, collecting the instruments afterwards is effortless and fast thanks to the color codes. Our solution offers hospitals worldwide a clear advantage in efficiency and traceability.
 
-![Image of website](/Atmosdot labels hand.png "Image of website")
+![Image of website](/Atmosdot-labels-hand.png "Image of website")
