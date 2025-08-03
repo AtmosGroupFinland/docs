@@ -209,7 +209,7 @@ function formatDate(date) {
 }
 .post-image {
   width: 100%;
-  height: auto;
+  height: 100px;
   border-radius: 8px;
   margin-bottom: 1rem;
   object-fit: cover;
