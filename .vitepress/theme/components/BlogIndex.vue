@@ -14,18 +14,16 @@
           </div>
         </div>
 
-        <!-- Blog Post Image -->
+        <h2 class="post-title">
+          <a :href="post.url">{{ post.frontmatter.title }}</a>
+        </h2>
+ <!-- Blog Post Image -->
         <img
           v-if="post.frontmatter.image"
           :src="post.frontmatter.image"
           alt="Blog post image"
           class="post-image"
         />
-
-        <h2 class="post-title">
-          <a :href="post.url">{{ post.frontmatter.title }}</a>
-        </h2>
-
         <p class="post-excerpt">{{ post.frontmatter.excerpt }}</p>
 
         <div class="post-footer">
