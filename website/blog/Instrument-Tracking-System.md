@@ -32,4 +32,4 @@ We believe that software development is a continuous journey. AtmosTrack will ev
 
 Stay tuned for more updates as we roll out these exciting phases!🌐
 
-![Image of website](/Nimeton-malli-6.mp4 "Image of website")
+<video src="/Nimeton-malli-6.mp4" autoplay></video>
