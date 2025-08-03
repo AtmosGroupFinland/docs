@@ -4,6 +4,7 @@ date: 2025-03-15
 excerpt: Exciting website updates
 author: AGF Team
 tags: [atmostrack, website]
+image: "/MacBook-13-2-1024x768.png"
 ---
 
 # Website updates for clearer communication
