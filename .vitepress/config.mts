@@ -91,6 +91,7 @@ export default defineConfig({
 							text: "AtmosTrack",
 							collapsed: true,
 							items: [
+								{ text: "Installation & Updates", link: "/atmostrack/installation-and-updates" },
 								{ text: "Markdown Examples", link: "/markdown-examples" },
 								{ text: "Runtime API Examples", link: "/api-examples" },
 							],

@@ -10,5 +10,9 @@
 		"build": "vitepress build",
 		"preview": "vitepress preview"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@types/js-yaml": "^4.0.9",
+		"js-yaml": "^4.1.0"
+	}
 }
