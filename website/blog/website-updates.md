@@ -3,7 +3,7 @@ title: Website updates for clearer communication
 date: 2025-03-15
 excerpt: Exciting website updates
 author: AGF Team
-tags: [atmostrack, getting-started, tutorial]
+tags: [atmostrack, website]
 ---
 
 # Website updates for clearer communication
