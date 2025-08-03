@@ -1,6 +1,6 @@
 ---
 title: Website updates for clearer communication
-date: 2024-01-15
+date: 2025-03-15
 excerpt: Exciting website updates
 author: AGF Team
 tags: [atmostrack, getting-started, tutorial]
