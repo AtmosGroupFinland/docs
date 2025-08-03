@@ -169,6 +169,9 @@ export default defineConfig({
 					prev: "Edellinen sivu",
 					next: "Seuraava sivu",
 				},
+				outline: {
+					label: 'Tällä sivulla'	
+				}
 			},
 		},
 		ar: {
