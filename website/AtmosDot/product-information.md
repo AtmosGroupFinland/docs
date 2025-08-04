@@ -1,4 +1,7 @@
-# HELLO
+---
+title: Installation and Updates
+description: Download and install the latest version of AtmosTrack
+---
 
 <script setup>
 import { data as releaseData } from '../../.vitepress/data/releaseData.data.ts'
