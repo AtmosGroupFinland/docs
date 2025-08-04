@@ -99,13 +99,9 @@ export default defineConfig({
 						{
 							text: "AtmosDot",
 							collapsed: true,
-							items: [{ text: "Overview", link: "/atmosdot/overview" }],
+							items: [{ text: "Brochure and installation", link: "/atmosdot/product-information" }],
 						},
-						{
-							text: "AtmosPortal",
-							collapsed: true,
-							items: [{ text: "Overview", link: "/atmosportal/overview" }],
-						},
+						
 					],
 				},
 			],
