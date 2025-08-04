@@ -2,5 +2,6 @@
 title: Brochure and installation
 description: Download AtmosDot brochure and see the installation guide
 ---
-# Download AtmosDot brochure below
+# Brochure and installation
+![download pdf](/AtmosGroup-Finland-Brochure-2025.pdf)
 ![Image of website](/Atmos-Group-Finland-Brochure-2025.png "Image of website")
