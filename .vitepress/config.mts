@@ -99,7 +99,7 @@ export default defineConfig({
 						{
 							text: "AtmosDot",
 							collapsed: true,
-							items: [{ text: "Brochure and installation", link: "/atmosdot/product-information" }],
+							items: [{ text: "Brochure and installation", link: "/product-information" }],
 						},
 						
 					],
