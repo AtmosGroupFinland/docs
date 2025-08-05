@@ -60,7 +60,9 @@ const { Layout } = DefaultTheme
 
 /* Hover effect for hamburger menu */
 .VPNavBarHamburger:hover {
-  opacity: 0.1;
+  opacity: 0.9;
 }
-
+.VPNavBarHamburger:hover svg path {
+  stroke: #ff0000 !important;
+}
 </style>
