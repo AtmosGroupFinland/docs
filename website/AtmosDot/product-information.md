@@ -4,9 +4,6 @@ description: Download AtmosDot brochure and see the installation guide
 ---
 # Brochure and installation!!
 
-![Image of website](/AGF_Brochure_3.png "Image of website")
-![download pdf](/Atmos-Group-Finland-Brochure-2025.pdf)
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,9 +33,11 @@ description: Download AtmosDot brochure and see the installation guide
 </head>
 <body>
 
-  <a href="https://example.com/your-file.pdf" download="AtmosGroup-Brochure.pdf" class="download-btn">
+  <a href="https://atmosgroup.fi/wp-content/uploads/2025/06/Atmos-Group-Finland-Brochure-6.2025.pdf" download="AtmosGroup-Brochure.pdf" class="download-btn">
     📄 Download PDF
   </a>
 
 </body>
 </html>
+
+![Image of website](/AGF_Brochure_3.png "Image of website")
