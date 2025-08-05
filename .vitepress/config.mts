@@ -46,7 +46,7 @@ export default defineConfig({
 		nav: [
 			{ text: "Documentation", link: "/" },
 			{ text: "Blog", link: "/blog/", activeMatch: "/blog/" },
-			{ text: "Changelog", link: "/change-log/", activeMatch: "/change-log/" },
+			{ text: "Changelog", link: "/changelogg/", activeMatch: "/changelogg/" },
 		],
 
 		search: {
