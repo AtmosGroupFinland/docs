@@ -66,7 +66,7 @@ As of 03.08.2025 we only have Beta version, stable release is coming very soon!
 
 ## Updates
 
-AtmosTrack automatically checks for updates when launched. You can also manually check for updates from the application menu.
+**AtmosTrack automatically checks for updates when launched.** You can also manually check for updates from the application menu.
 
 <style scoped>
 .release-info {
