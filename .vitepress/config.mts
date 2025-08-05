@@ -104,7 +104,12 @@ export default defineConfig({
 					],
 				},
 			],
-			
+			"/blog/": [
+				{
+					text: "Blog",
+					items: [{ text: "Overview", link: "/blog/" }],
+				},
+			],
 
 		},
 		i18nRouting: true,
