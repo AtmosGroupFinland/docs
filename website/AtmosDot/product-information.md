@@ -8,8 +8,19 @@ description: Download AtmosDot brochure and see the installation guide
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Download PDF Button</title>
+  <title>Download PDF Box</title>
   <style>
+    .download-box {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 40px auto;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
     .download-btn {
       display: inline-block;
       padding: 12px 24px;
@@ -18,7 +29,7 @@ description: Download AtmosDot brochure and see the installation guide
       text-decoration: none;
       font-size: 16px;
       font-weight: 600;
-      border-radius: 8px;
+      border-radius: 6px;
       transition: background-color 0.3s ease;
     }
 
@@ -33,11 +44,16 @@ description: Download AtmosDot brochure and see the installation guide
 </head>
 <body>
 
-  <a href="https://atmosgroup.fi/wp-content/uploads/2025/06/Atmos-Group-Finland-Brochure-6.2025.pdf" download="AtmosGroup-Brochure.pdf" class="download-btn">
-    📄 Download PDF
-  </a>
+  <div class="download-box">
+    <h2>Download Our Brochure</h2>
+    <p>Click the button below to download the latest Atmos Group PDF brochure.</p>
+    <a href="https://example.com/your-file.pdf" download="AtmosGroup-Brochure.pdf" class="download-btn">
+      📄 Download PDF
+    </a>
+  </div>
 
 </body>
 </html>
+
 
 ![Image of website](/AGF_Brochure_3.png "Image of website")
