@@ -44,6 +44,9 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.VPNavBarHamburger {
-  color: #ffffff !important;
+/* Change color of hamburger lines */
+.VPNavBarHamburger .top,
+.VPNavBarHamburger .middle,
+.VPNavBarHamburger .bottom {
+  background-color: #ffffff !important; /* Replace with your desired color */
 }
