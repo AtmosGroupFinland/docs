@@ -92,6 +92,7 @@ export default defineConfig({
 							text: "AtmosTrack",
 							collapsed: true,
 							items: [
+								{ text: "Changelog", link: "/changelog/change-log" },
 								{ text: "Installation & Updates", link: "/AtmosTrack/installation-and-updates" },
 							    { text: "System map (EN/FI)", link: "/AtmosTrack/system-map" }
 							],
