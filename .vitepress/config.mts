@@ -129,6 +129,7 @@ export default defineConfig({
 				nav: [
 					{ text: "Dokumentaatio", link: "/fi" },
 					{ text: "Blogi", link: "/fi/blog/" },
+					{ text: "Blogi", link: "/fi/blog/" },
 				],
 				sidebar: {
 					"/fi": [
