@@ -35,8 +35,9 @@
     box-shadow: inset 0 0 0 1px var(--vp-c-brand-1);
 }
 
-.DocSearch-Button:hover {
-  background-color: #ffffff !important; /* White background */
+.DocSearch-Button-Container {
+  color: white !important;
+  fill: white !important;
 }
 
 /* Language selector hover improvements */
