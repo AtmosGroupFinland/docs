@@ -53,6 +53,7 @@ As of 03.08.2025 we only have Beta version, stable release is coming very soon!
 ![Image of website](/installation1.png "Image of website")
 
 ![Image of website](/installation2.png "Image of website")
+
 5. **Follow** the installation wizard steps
 6. **Launch** AtmosTrack from your desktop or start menu
 
