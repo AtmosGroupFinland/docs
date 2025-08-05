@@ -62,8 +62,7 @@ const { Layout } = DefaultTheme
 .VPNavBarHamburger:hover {
   opacity: 0.9;
 }
-/* Set default color of the hamburger button */
-.VPNavBarHamburger {
-  color: #ffffffff; /* Change to your desired default color */
+button.VPNavBarHamburger path {
+  stroke: #ffffff;
 }
 </style>
