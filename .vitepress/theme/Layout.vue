@@ -58,8 +58,20 @@ const { Layout } = DefaultTheme
   color: var(--vp-c-brand-1) !important;
 }
 
-/* Hover effect for hamburger menu */
+/* Change hamburger icon color */
+.VPNavBarHamburger {
+  color: #ff0000; /* your desired color */
+}
+
+/* Change color on hover */
 .VPNavBarHamburger:hover {
   opacity: 0.8;
+  color: #cc0000; /* slightly different hover color */
 }
+
+/* If the hamburger lines are SVG paths inside */
+.VPNavBarHamburger svg path {
+  stroke: #ff0000; /* line color */
+}
+
 </style>
