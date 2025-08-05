@@ -2,7 +2,7 @@
 title: Info and installation
 description: Download AtmosDot brochure and see the installation guide
 ---
-# Info and installation
+# Info and installation.
 
 ## General
 
