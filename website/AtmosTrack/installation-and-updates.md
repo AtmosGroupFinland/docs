@@ -49,6 +49,8 @@ As of 03.08.2025 we only have Beta version, stable release is coming very soon!
 1. **Download** the latest installer using the link above
 2. **Run** the downloaded `.exe` file
 3. **Accept Warning** There will be warning about installing potentially dangerous software this is due to software being in Beta version and missing a code signing certificate (we're woking on it).
+![Image of website](/installation1.png "Image of website")
+![Image of website](/installation2.png "Image of website")
 5. **Follow** the installation wizard steps
 6. **Launch** AtmosTrack from your desktop or start menu
 
