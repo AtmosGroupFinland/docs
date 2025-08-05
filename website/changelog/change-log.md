@@ -6,7 +6,7 @@ title: Change log.
 
 Welcome to the AtmosTrack Changelog!
 
-## Version 0.1.2 - 6-7-2025
+## Version 0.1.2 - 20-7-2025
 
 - Added barcode log in
 - Added user management page
