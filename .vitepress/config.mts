@@ -114,12 +114,6 @@ export default defineConfig({
 
 		},
 		i18nRouting: true,
-
-		editLink: {
-			pattern:
-				"https://github.com/AtmosGroupFinland/docs/edit/main/website/:path",
-			text: "Edit this page on GitHub",
-		},
 	},
 	locales: {
 		root: { label: "English", lang: "en" },
