@@ -1,8 +1,8 @@
 ---
-title: Changelog
+title: Change log
 ---
 
-# Changelog
+# Change log
 
 Welcome to the AtmosTrack Changelog!
 
