@@ -1,5 +1,5 @@
 ---
-title: Brochure and installation
+title: Info and installation
 description: Download AtmosDot brochure and see the installation guide
 ---
 # Brochure and installation
