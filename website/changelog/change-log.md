@@ -6,19 +6,19 @@ title: Change log.
 
 Welcome to the AtmosTrack Changelog!
 
-## Version 0.1.2 - 20-7-2025
+## Version 0.1.5 - 20-7-2025
 
 - Added barcode log in
 - Added user management page
 - Added error detecting
 
-## Version 0.1.2 - 8-7-2025
+## Version 0.1.4 - 8-7-2025
 
 - Added Microsoft log in
 - Added dashboard reports
 - Added settings-page & automatic updates
 
-## Version 0.1.2 - 2-7-2025
+## Version 0.1.3 - 2-7-2025
 
 - Added specification-page
 - Added datamatrix scanning 
