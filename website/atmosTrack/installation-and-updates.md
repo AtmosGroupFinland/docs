@@ -102,3 +102,5 @@ AtmosTrack automatically checks for updates when launched. You can also manually
   font-size: 0.8em;
 }
 </style>
+
+Feel free to contact our support in any instalation issues: support@atmosgroup.fi
