@@ -5,5 +5,5 @@ description: Download AtmosDot brochure and see the installation guide
 # Brochure and installation!!
 
 ![Image of website](/AGF_Brochure_3.png "Image of website")
-
+![download pdf](/Atmos-Group-Finland-Brochure-2025.pdf)
 
