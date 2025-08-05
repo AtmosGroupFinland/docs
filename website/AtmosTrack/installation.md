@@ -1,5 +1,5 @@
 ---
-title: Installation and Updates
+title: Installation
 description: Download and install the latest version of AtmosTrack
 ---
 
