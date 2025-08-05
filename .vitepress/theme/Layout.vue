@@ -62,7 +62,7 @@ const { Layout } = DefaultTheme
 .VPNavBarHamburger:hover {
   opacity: 0.9;
 }
-button.VPNavBarHamburger path {
-  stroke: #ffffff;
+.VPNavBarHamburger svg path {
+  stroke: #ffffff; /* white */
 }
 </style>
