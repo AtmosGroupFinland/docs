@@ -90,11 +90,7 @@ export default defineConfig({
 						{
 							text: "AtmosTrack",
 							collapsed: true,
-							items: [
-								{ text: "Installation & Updates", link: "/AtmosTrack/installation-and-updates" },
-								
-								
-							],
+							items: [{ text: "Installation & Updates", link: "/AtmosTrack/installation-and-updates" }],
 						},
 						{
 							text: "AtmosDot",
