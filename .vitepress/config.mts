@@ -94,12 +94,15 @@ export default defineConfig({
 							items: [
 								{ text: "Changelog", link: "/changelog/change-log" },
 								{ text: "Installation", link: "/AtmosTrack/installation" },
-							    { text: "System map (EN/FI)", link: "/AtmosTrack/system-map" }
+							    { text: "System map (EN/FI)", link: "/AtmosTrack/system-map" },
 								{
-							text: "Onboarding",
-							collapsed: true,
-							items: [
-							],
+									text: "Onboarding",
+									collapsed: true,
+									items: [
+										{ text: "Onboarding", link: "/Onboarding/" }
+									]
+								}
+								]
 						},
 						{
 							text: "AtmosDot",
