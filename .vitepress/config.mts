@@ -99,7 +99,7 @@ export default defineConfig({
 									text: "Onboarding",
 									collapsed: true,
 									items: [
-										{ text: "Onboarding", link: "/AtmosTrack/Onboarding" },
+										{ text: "Onboarding", link: "/AtmosTrack/Onboarding/Onboarding" },
 									]
 								}
 								]
