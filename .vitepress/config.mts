@@ -100,6 +100,9 @@ export default defineConfig({
 									collapsed: true,
 									items: [
 										{ text: "Onboarding", link: "/AtmosTrack/Onboarding/Onboarding" },
+										{ text: "Adding Organization", link: "/AtmosTrack/Onboarding/organization" },
+										{ text: "Adding Users", link: "/AtmosTrack/Onboarding/users" },
+										{ text: "Adding Departments", link: "/AtmosTrack/Onboarding/departments" },
 									]
 								}
 								]
