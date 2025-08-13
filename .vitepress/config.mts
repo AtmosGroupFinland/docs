@@ -40,13 +40,16 @@ export default defineConfig({
 	],
 
 	themeConfig: {
-		// https://vitepress.dev/reference/default-theme-config
-		logo: "/logo.png",
-		siteTitle: false,
-		nav: [
-			{ text: "Documentation", link: "/" },
-			{ text: "Changelog", link: "/changelog/change-log", activeMatch: "/changelog/change-log" },
-			{ text: "Blog", link: "/blog/", activeMatch: "/blog/" },
+  logo: {
+    src: '/logo.png',
+    link: 'https://www.atmosgroup.fi',
+    alt: 'Atmos Group'
+  },
+  siteTitle: false,
+  nav: [
+    { text: "Documentation", link: "/" },
+    { text: "Changelog", link: "/changelog/change-log", activeMatch: "/changelog/change-log" },
+    { text: "Blog", link: "/blog/", activeMatch: "/blog/" },
 		],
 
 		search: {
