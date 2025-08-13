@@ -99,7 +99,7 @@ export default defineConfig({
 									text: "Onboarding",
 									collapsed: true,
 									items: [
-										{ text: "Onboarding", link: "/Onboarding/Onboarding" }
+										{ text: "Onboarding", link: "/Onboarding/Onboarding" },
 									]
 								}
 								]
