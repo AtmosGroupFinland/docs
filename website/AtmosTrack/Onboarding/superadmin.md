@@ -1,7 +1,7 @@
 ---
-title: Onboarding
+title: Onboarding for super admins
 ---
-# Onboarding
+# Onboarding for super admins
 
 ## Overview
 
