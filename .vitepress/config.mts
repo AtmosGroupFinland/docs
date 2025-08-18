@@ -101,8 +101,18 @@ export default defineConfig({
 									items: [
 										{ text: "Super admin", link: "/AtmosTrack/Onboarding/superadmin" },
 										{ text: "Adding Organization", link: "/AtmosTrack/Onboarding/organization" },
-										{ text: "Adding Users", link: "/AtmosTrack/Onboarding/users" },
-										{ text: "Adding Departments", link: "/AtmosTrack/Onboarding/departments" },
+									]
+								},
+								{
+									text: "User Interface Guide",
+									collapsed: true,
+									items: [
+										{ text: "Using AtmosTrack", link: "/AtmosTrack/user-interface/overview" },
+										{ text: "How to Login", link: "/AtmosTrack/user-interface/authentication" },
+										{ text: "Packaging Instruments", link: "/AtmosTrack/user-interface/packaging-workflow" },
+										{ text: "Performance Dashboard", link: "/AtmosTrack/user-interface/dashboard-analytics" },
+										{ text: "Settings & Preferences", link: "/AtmosTrack/user-interface/settings-configuration" },
+										{ text: "Data Safety & Access", link: "/AtmosTrack/user-interface/data-management" },
 									]
 								}
 								]
