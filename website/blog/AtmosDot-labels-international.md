@@ -3,7 +3,7 @@ title: AtmosDot labels working internationally
 date: 2025-05-15
 excerpt: AtmosDot labels going international starting with Norway
 author: AGF Team
-tags: [atmoslabels, atmosdot, insternational]
+tags: [atmoslabels, atmosdot, international]
 image: "/Atmosdot-labels-hand.png"
 ---
 
