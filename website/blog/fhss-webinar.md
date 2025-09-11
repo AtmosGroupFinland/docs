@@ -20,3 +20,5 @@ We are especially grateful to Babak Rashnavadi, MBA, for both inviting us to the
 We also extend our thanks to Dr. Ahmed Baggashi and the MENA FHSS team for organizing such an excellent event. Bringing together professionals from across the region to exchange ideas and experiences is no small task, and the impact of such initiatives is significant.
 
 As we look ahead, we are excited about the partnerships and opportunities that lie before us in the MENA region. This webinar was an important step forward, and we remain committed to supporting healthcare professionals with solutions that truly make a difference.
+
+![Image of website](/mkwebinar.jpeg "Image of website")
