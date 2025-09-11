@@ -6,6 +6,18 @@ title: Change log.
 
 Welcome to the AtmosTrack Changelog!
 
+## Version 0.1.7 - 17-8-2025
+
+- Added barcode generation for pouch instruments
+- Fixed default item choise on specification page
+- Modified Packages and Instruments tables to a tab selection
+
+## Version 0.1.6 - 5-8-2025
+
+- Fixed image scaling for product cards
+- Fixed table scaling on different monitor sizes
+- Enchased the looks for listed content
+
 ## Version 0.1.5 - 20-7-2025
 
 - Added barcode log in
