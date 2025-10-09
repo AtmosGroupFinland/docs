@@ -14,7 +14,7 @@ export declare const data: ReleaseData
 export default {
   async load(): Promise<ReleaseData> {
     try {
-      const response = await fetch('https://atmostrack.ams3.digitaloceanspaces.com/releases/beta/beta.yml')
+      const response = await fetch('https://atmostrack.ams3.digitaloceanspaces.com/releases/stable.yml')
       if (!response.ok) {
         throw new Error(`Failed to fetch release data: ${response.status}`)
       }
@@ -32,7 +32,7 @@ export default {
       
       const releaseData: ReleaseData = {
         version: version,
-        downloadUrl: `https://atmostrack.ams3.digitaloceanspaces.com/releases/beta/${file.url}`,
+        downloadUrl: `https://atmostrack.ams3.digitaloceanspaces.com/releases/${file.url}`,
         fileName: file.url,
         size: file.size,
         sha512: file.sha512,
