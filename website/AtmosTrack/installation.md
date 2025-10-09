@@ -24,8 +24,6 @@ function formatDate(dateString) {
 
 # Installation and Updates
 
-As of 03.08.2025 we only have Beta version, stable release is coming very soon!
-
 ## Latest Version
 
 <div class="release-info">
