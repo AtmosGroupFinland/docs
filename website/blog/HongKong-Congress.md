@@ -1,9 +1,9 @@
 ---
-title: AtmosDot labels working internationally
+title: Atmos Group Finland attending 26th WHFSS Congress
 date: 2025-05-15
-excerpt: AtmosDot labels going international starting with Norway
+excerpt: Atmos Group Finland attending the 26th WHFSS Congress
 author: AGF Team
-tags: [atmoslabels, atmosdot, international]
+tags: [WHFSS, international, exhibition]
 image: "/Atmosdot-labels-hand.png"
 ---
 
