@@ -9,16 +9,18 @@ image: "/Hong-kong-picture.png"
 
 # Meeting our distributors at the Global congress
 
-It’s been truly gratifying to see how the colored identification labels for surgical instruments, developed here in Finland, have clarified and streamlined sterile processing workflows beyond our borders. We’re especially pleased to see our solution succeed internationally, for example, in hospitals in Bodø and Lofoten in Norway.
+What an incredible three days it has been for Atmos Group Finland at Hong Kong’s Sterilization Congress. Hosted at the impressive AsiaWorld-Expo, the event brought together leading professionals and innovators from across the global sterilization and healthcare technology community. The venue itself offered the perfect environment for high-level discussions, networking, and exploring the latest advancements shaping the future of CSSDs worldwide.
 
 ![Image of website](/Hong-kong-picture.png "Image of website")
 
-Hospital sterile processing units worldwide face the same familiar challenge every afternoon. Thousands of instruments arrive from morning surgical operations for washing and the sterilization process.
+Throughout the congress, we met experts from around the world, exchanged valuable insights, shared countless laughs, and most importantly, deepened both new and existing partnerships with industry leaders.
 
-How do you keep identical-looking instruments separate? How can you ensure that the correct individual instrument is returned to its rightful owner – the correct department or team – after the washing process?
+We also had the opportunity to meet potential consumable distributors interested in bringing new solutions to the Finnish CSSD market — and we’re excited to share that negotiations are already underway. Expanding our consumables offering with international partners marks a significant step forward in strengthening our market presence and delivering even more value to our customers.
 
-**Hospitals in Northern Norway, including those in Bodø and the Lofoten region, sought answers to these questions. The solution was found in our developed colored, laser-marked identification labels, AtmosDot.**
+These moments reinforce something we’ve believed in from the very beginning: business is built on people. Meaningful connections remain at the heart of everything we do at Atmos Group, and they continue to drive our mission and growth.
 
-Each instrument is marked with a specific color by department, and a unique 2D Matrix code is laser-etched onto each label. The colored identifier speeds up departmental identification even before the washing process begins, allowing instruments from the same client to be processed together in the same washer. Even if washing is done in different machines, collecting the instruments afterwards is effortless and fast thanks to the color codes. Our solution offers hospitals worldwide a clear advantage in efficiency and traceability.
+A heartfelt thank you goes to Babak Rashnavadi, MBA and Iris Grabowski for opening doors to new international market opportunities right on the spot. Your support, vision, and innovative mindset truly make a difference — and we are excited about what comes next.
+
+Of course, no visit to Hong Kong would be complete without experiencing the city itself. After long congress days, we explored Hong Kong’s vibrant nightlife, enjoyed amazing food, and took a ride on the famous Mid-Levels Escalator — the world’s longest outdoor covered escalator system. These moments offered the perfect balance between business and culture, reminding us just how special this city is.
 
 ![Image of website](/Distributors.jpeg "Image of website")
