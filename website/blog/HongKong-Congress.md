@@ -21,7 +21,7 @@ These moments reinforce something we’ve believed in from the very beginning: b
 
 ![Image of website](/Distributors.jpeg "Image of website")
 
-A heartfelt thank you goes to Babak Rashnavadi, MBA and Iris Grabowski for opening doors to new international market opportunities right on the spot. Your support, vision, and innovative mindset truly make a difference and we are excited about what comes next.
+A heartfelt thank you goes to Babak Rashnavadi, MBA and Iris Grabowski for opening doors to new international market opportunities right on the spot. Their support, vision, and innovative mindset truly make a difference and we are excited about what comes next.
 
 Of course, no visit to Hong Kong would be complete without experiencing the city itself. After long congress days, we explored Hong Kong’s vibrant nightlife, enjoyed amazing food, and took a ride on the famous Mid-Levels Escalator the world’s longest outdoor covered escalator system. These moments offered the perfect balance between business and culture, reminding us just how special this city is.
 
