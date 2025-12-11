@@ -25,4 +25,4 @@ A heartfelt thank you goes to Babak Rashnavadi, MBA and Iris Grabowski for openi
 
 Of course, no visit to Hong Kong would be complete without experiencing the city itself. After long congress days, we explored Hong Kong’s vibrant nightlife, enjoyed amazing food, and took a ride on the famous Mid-Levels Escalator the world’s longest outdoor covered escalator system. These moments offered the perfect balance between business and culture, reminding us just how special this city is.
 
-![Image of website](/Hong-Kong-Midlevelstairs.JPEG "Image of website")
+![Image of website](/Hong-Kong-Midlevelstairs.jpeg "Image of website")
