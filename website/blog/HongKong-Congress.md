@@ -1,7 +1,7 @@
 ---
 title: Atmos Group Finland attending 26th WHFSS Congress
 date: 2025-12-8
-excerpt: Atmos Group Finland attending the 26th WHFSS Congress
+excerpt: Meeting our distributors at the Global congress
 author: AGF Team
 tags: [WHFSS, international, exhibition]
 image: "/Hong-kong-picture.png"
